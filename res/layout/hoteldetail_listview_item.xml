@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/hotelUserItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic4"
+            app:riv_corner_radius="100dip" />
+
+        <TextView
+            android:id="@+id/hotelUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hotelUserItem"
+            android:gravity="center_vertical"
+            android:text="悠悠君"
+            android:textColor="@color/main" />
+
+        <TextView
+            android:id="@+id/hotelUserLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/hotelUserName"
+            android:gravity="center_vertical"
+            android:text="lv4"
+            android:textColor="@color/main" />
+
+        <TextView
+            android:id="@+id/hotelPublishTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/hotelUserName"
+            android:layout_marginRight="10dp"
+            android:text="2015-09-21"
+            android:textColor="#aaa" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hotelContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+</LinearLayout>

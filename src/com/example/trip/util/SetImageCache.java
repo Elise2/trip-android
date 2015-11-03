@@ -1,0 +1,30 @@
+package com.example.trip.util;
+
+import android.graphics.Bitmap;
+import android.support.v4.util.LruCache;
+
+import com.android.volley.toolbox.ImageLoader.ImageCache;
+
+public class SetImageCache implements ImageCache {
+	private int maxSize = 1024 * 1024 * 10;
+	LruCache<String, Bitmap> cache = new LruCache<String, Bitmap>(maxSize) {
+		protected int sizeOf(String key, Bitmap value) {
+			return value.getRowBytes() * value.getHeight();
+
+		}
+	};
+
+	@Override
+	public Bitmap getBitmap(String arg0) {
+		// TODO Auto-generated method stub
+		return cache.get(arg0);
+	}
+
+	@Override
+	public void putBitmap(String arg0, Bitmap arg1) {
+		// TODO Auto-generated method stub
+		cache.put(arg0, arg1);
+
+	}
+
+}

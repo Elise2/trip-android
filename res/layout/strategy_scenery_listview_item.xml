@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp" >
+
+        <ImageView
+            android:id="@+id/sceneryImg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/sceneryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/sceneryImg"
+            android:text="八大关景区"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/smallTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sceneryTitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/sceneryImg"
+            android:text="3366"
+            android:textColor="#F9AF00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sceneryTitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/smallTalk"
+            android:text="条评论"
+            android:textColor="#BFBFBF" />
+
+        <TextView
+            android:id="@+id/sceneryType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/smallTalk"
+            android:layout_toRightOf="@id/sceneryImg"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:text="必游 历史遗迹 名人故居 自然风光"
+            android:textColor="#BFBFBF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F7F7F7"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <View
+            android:id="@+id/sceneryView"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="#F9AF00" />
+
+        <TextView
+            android:id="@+id/recommendTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/sceneryView"
+            android:text="沐年"
+            android:textColor="#F9AF00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/recommendContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/recommendTitle"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="某圆觉得，淡季出行虽然劈柴院的美食没有吃全，中山路的游客也不太多(准确的说是路上集合见不到人)"
+            android:textColor="#BFBFBF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hotelHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/orderHmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_topbar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="酒店详情"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/hotelview1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/hotelHeader"
+        android:background="#ccc" />
+
+    <RelativeLayout
+        android:id="@+id/hotelNextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelview1"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/orderheaderImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotelimg" />
+
+        <TextView
+            android:id="@+id/orderhotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="130dp"
+            android:text="锦江之星青岛中山路"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/hotelSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderhotelName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2037"
+            android:textColor="@color/main" />
+
+        <TextView
+            android:id="@+id/supporter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderhotelName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/hotelSupport"
+            android:text="位点赞过"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hotelStrategy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelNextview"
+        android:background="#fff" >
+
+        <View
+            android:id="@+id/hotelView1"
+            android:layout_width="2dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F9AF00" />
+
+        <TextView
+            android:id="@+id/orderhotelContent"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="口碑一直不错的锦江之星，偏爱古建筑群的驴友们可以选择住这家！小吃街劈柴院和著名的天主教堂走走路就到了，还可以买海鲜让大厨帮忙加工！" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/recommedView2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/hotelStrategy"
+        android:layout_marginTop="20dp"
+        android:background="#eaeaea" />
+
+    <LinearLayout
+        android:id="@+id/hotelRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommedView2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hoteltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="酒店攻略"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="【必读】"
+            android:textColor="#F9AF00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="--酒店距离浙江路天主教堂和中山路购物区仅有10分钟步行路程。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="--酒店距离著名的栈桥公园有15分钟步行路程。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:text="--酒店距离著名的鲁迅公园、青岛海底世界和第一海水浴有" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/recommedView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/hotelRecommend"
+        android:layout_marginTop="20dp"
+        android:background="#eaeaea" />
+
+    <TextView
+        android:id="@+id/recommendTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/recommedView"
+        android:gravity="center"
+        android:text="点评集锦"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/recommedView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/recommendTitle"
+        android:layout_marginTop="10dp"
+        android:background="#ccc" />
+
+</LinearLayout>

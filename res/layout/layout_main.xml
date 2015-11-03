@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/discoverbutton"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="发现"
+            android:textColor="@color/mainbottomcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/communitybutton"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="社区"
+            android:textColor="@color/mainbottomcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/datebutton"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="日程"
+            android:textColor="@color/mainbottomcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/mybutton"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="我的"
+            android:textColor="@color/mainbottomcolor"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/select"
+        android:background="#eaeaea" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divide"
+        android:background="#fff" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

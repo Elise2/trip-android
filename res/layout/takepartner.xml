@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/icBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_topbar_back" />
+
+        <TextView
+            android:id="@+id/myPartner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的驴友"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gowent"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="发起"
+            android:textColor="#F9AF00" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/partView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/top_bar"
+        android:background="#ccc" />
+
+    <EditText
+        android:id="@+id/locationEdit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/partView"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_bg"
+        android:drawableLeft="@drawable/ic_search_32"
+        android:drawablePadding="10dp"
+        android:hint="搜索你感兴趣的结伴内容"
+        android:paddingLeft="50dp"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/locationEdit"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#eee"
+            android:drawableRight="@drawable/pic2"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="全部目的地"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="#eee"
+            android:drawableRight="@drawable/pic1"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="最近出发"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#eee"
+            android:drawableRight="@drawable/pic2"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="筛选"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/partList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBtn"
+        android:scrollbars="none" >
+    </ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:drawableLeft="@drawable/pic3"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="我要发结伴"
+        android:textColor="#F9AF00" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/qa_icon_useful_visited" android:state_checked="true"></item>
+    <item android:drawable="@drawable/qa_icon_useful"></item>
+
+</selector>

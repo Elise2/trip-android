@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置登录Button的边角 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:top="12dp"
+        	android:bottom="12dp"
+        	android:left="1.5dp"
+        	android:right="1.5dp">
+        <shape >
+            <corners android:radius="10dp"/>
+            <solid android:color="#fff"></solid>
+            <stroke android:width="0.5dp" android:color="#ccc"></stroke>
+        </shape>
+    </item>
+
+</layer-list>

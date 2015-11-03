@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/beencityTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="重庆"
+        android:textColor="#D5D5D5"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/beencityTime"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="#D5D5D5" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/white_point" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#D5D5D5" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/beencityImg"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/line"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_mine_default_bg" />
+
+    <TextView
+        android:id="@+id/beencityName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beencityImg"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/line"
+        android:text="重庆"
+        android:textColor="#D5D5D5"
+        android:textSize="18sp" />
+
+</RelativeLayout>

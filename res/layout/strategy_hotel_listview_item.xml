@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp" >
+
+        <ImageView
+            android:id="@+id/hotelImg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/hotelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/hotelImg"
+            android:text="八大关景区"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/hotelTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotelTitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/hotelImg"
+            android:text="3366"
+            android:textColor="#F9AF00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotelTitle"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/hotelTalk"
+            android:text="条评论"
+            android:textColor="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/hotelAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/hotelTalk"
+            android:layout_toRightOf="@id/hotelImg"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:text="经济型住宿 经济型/环形路"
+            android:textColor="#E4E4E4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hotelPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/hotelTalk"
+            android:layout_marginRight="10dp"
+            android:gravity="bottom"
+            android:text="元起"
+            android:textColor="#F9AF00" />
+
+        <TextView
+            android:id="@+id/hotelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/hotelTalk"
+            android:layout_toLeftOf="@id/hotelPrice1"
+            android:gravity="bottom"
+            android:text="￥48"
+            android:textColor="#F9AF00"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F7F7F7"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <View
+            android:id="@+id/hotelView"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="#F9AF00" />
+
+        <TextView
+            android:id="@+id/hotelRecommendTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hotelView"
+            android:text="沐年"
+            android:textColor="#F9AF00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hotelRecommendContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hotelRecommendTitle"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="某圆觉得，淡季出行虽然劈柴院的美食没有吃全，中山路的游客也不太多(准确的说是路上集合见不到人)"
+            android:textColor="#E4E4E4"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

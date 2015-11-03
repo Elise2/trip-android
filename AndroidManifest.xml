@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trip"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.trip.util.TripApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ovabUtrKXmWBoHB6nZzXN0zM" />
+
+        <activity
+            android:name="com.example.trip.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.trip.activity.CityDetailsActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SceneryListActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.CityListActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.DateDetailNoteActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.MySettingActivity" />
+        <activity android:name="com.example.trip.activity.MyInfoActivity" />
+        <activity android:name="com.example.trip.activity.HomePagerShareSpotActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.ShortCityStrategyActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.LoginActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.PartnerActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.AddPlayNotesActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SceneryAskContentActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.DateDetailSceneryActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.WeatherActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.AddDateActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.CalendarsActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SceneryAskActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.AddAskActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SceneryNoteActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.StrategySceneryActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.OrderHotelActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.MyParternActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.DateDetailActivity" >
+        </activity>
+        <!-- 机器人 -->
+        <activity
+            android:name="com.example.trip.robot.LostActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity android:name="com.example.trip.activity.LookForTrafficActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SceneryContentActivity" >
+        </activity>
+        <!-- 预订酒店所用日历 -->
+        <activity android:name="com.example.viewdemo.main.OrderHotelCalendar" >
+        </activity>
+        <!-- 预订酒店 -->
+        <activity android:name="com.example.trip.locationselect.OrderHotel" >
+        </activity>
+        <activity
+            android:name="com.example.trip.locationselect.ActivitySelectCity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 目的地概况 -->
+        <activity android:name="com.example.trip.activity.ShortCityStrategyDetailActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.TrafficPlaneActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.TrafficStatioActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.HunterMainActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.HunterDetailActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.SearchLocationActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.NoteDeatailActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.NoteMainActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.MyStrorageActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.PublishShortActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.DiscussActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.OldDateActivity" >
+        </activity>
+        <!-- 酒店查询界面 -->
+        <activity android:name="com.example.trip.activity.OrderHotelMainActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.OrderHotelDetailActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.OrderForHotelActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.MyOrderActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.OrderHotelLastActivity" >
+        </activity>
+        <activity android:name="com.example.trip.activity.BeenActivity" >
+        </activity>
+        <!-- 友盟AppKey， 需要替换成你自己的 -->
+        <meta-data
+            android:name="trip"
+            android:value="5629a374e0f55a49610016b0" >
+        </meta-data>
+        <!-- 4eaee02c527015373b000003 -->
+        <!-- android:value="52a98cf856240b902211203e" > -->
+
+
+        <!-- *************************    分享相关的注册 START **************************** -->
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

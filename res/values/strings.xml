@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">trip</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <color name="main">#FA9F00</color>
+    <color name="deepgray">#8B8B8B</color>
+    <color name="lightBlack">#525252</color>
+    <color name="divide">#eaeaea</color>
+    <color name="bg">#F7F7F7</color>
+    
+</resources>

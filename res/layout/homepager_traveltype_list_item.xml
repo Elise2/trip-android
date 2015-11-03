@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+        <View
+            android:id="@+id/leftBar"
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="#F9AF00" />
+
+        <TextView
+            android:id="@+id/travelLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/leftBar"
+            android:gravity="center"
+            android:text="新西兰"
+            android:textColor="#F9AF00" />
+
+        <ImageView
+            android:id="@+id/cityWebLink"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/travelLocal"
+            android:src="@drawable/ic_weblink" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/topPicture"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top2" />
+    	
+    	<RelativeLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="10dp"
+    	    >
+    	    <TextView 
+    	        android:id="@+id/photoby"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="photo by 蜂蜂"
+    	        android:textColor ="#000"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_marginLeft="10dp"
+    	        />
+    	    <TextView 
+    	        android:id="@+id/photoByName"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="ZY_FC"
+    	        android:textColor="#F9AF00"
+    	        android:layout_toRightOf="@id/photoby"
+    	        />
+    	   <ImageView
+            android:id="@+id/webLink1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/photoByName"
+            android:src="@drawable/ic_weblink" />
+    	</RelativeLayout>
+    	<TextView 
+    	    android:id="@+id/shareReason"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_marginLeft="10dp"
+    	    android:text="推荐理由："
+    	    android:textColor="#F9AF00"
+    	    />
+    	<TextView 
+    	    android:id="@+id/detailReason"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textColor ="#000"
+    	  	android:layout_margin="10dp"
+    	    android:text="新西兰（New Zealand），又译纽西兰，是一个政治体制实行君主立宪制混合英国式议会民主制的国家，现为英联邦成员国之一。新西兰位于太平洋西南部，领土由南岛、北岛两大岛屿组成，以库克海峡分隔，南岛邻近南极洲，北岛与斐济及汤加相望。首都惠灵顿以及最大城市奥克兰均位于北岛[1]  。"
+    	    />
+
+</LinearLayout>

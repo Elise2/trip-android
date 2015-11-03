@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/hunterHeaderImg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hunter1" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/hunterImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/account_login_bg"
+            app:riv_corner_radius="100dip" />
+
+        <TextView
+            android:id="@+id/hunterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hunterImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="ELVA_皮尔" />
+
+        <Button
+            android:id="@+id/contactHunter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hunterName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btnbg"
+            android:text="联系猎人"
+            android:textColor="#aaa"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hunterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactHunter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="皮尔的京味儿旧货市场淘货之旅" />
+
+        <LinearLayout
+            android:id="@+id/hunterType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hunterTitle"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:id="@+id/hunterView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/hunterType"
+            android:layout_margin="10dp"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/orderInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hunterView" >
+
+            <ImageView
+                android:id="@+id/timebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/timebar" />
+
+            <TextView
+                android:id="@+id/orderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/timebar"
+                android:text="可预约时间："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/orderDetailTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/orderTime"
+                android:text="10.17,11.14,11.28,12.12,12.26"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/hunterView1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/orderInfo"
+            android:layout_margin="10dp"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:id="@+id/orderInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hunterView1" >
+
+            <ImageView
+                android:id="@+id/locationbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/locationbar" />
+
+            <TextView
+                android:id="@+id/orderTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/locationbar"
+                android:text="体验地点："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/orderLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/orderTime1"
+                android:text="北京大柳树旧货市场、红砖美术馆"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/hunterView2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/orderInfo1"
+            android:layout_margin="10dp"
+            android:background="#ccc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalSpot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF8EC" >
+
+        <TextView
+            android:id="@+id/spotTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="—————  ● 体验亮点  ● —————" />
+
+        <TextView
+            android:id="@+id/fistOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spotTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="● 户外小白也可以尝试的新鲜刺激的探险活动"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/secondOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fistOne"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="● 深入地下，为你打开前所未见的地下宫殿大门"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/thirdOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondOne"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="● 天然洞穴，石笋林立，让你叹为观止的自然奇观展现眼前。"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/spotTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thirdOne"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="—————  ● 体验描述  ● —————" />
+    </RelativeLayout>
+
+</LinearLayout>

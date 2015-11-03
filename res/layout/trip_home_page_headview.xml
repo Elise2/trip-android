@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发现主页面的头部 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <FrameLayout
+        android:id="@+id/homepaerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homePager"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+
+        <LinearLayout
+            android:id="@+id/headerIndicatorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/homepager_bg"
+            android:drawableLeft="@drawable/ic_search_input"
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:text="搜搜目的地、攻略、景点、酒店等"
+            android:textColor="#7C7C7C"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/indicatorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="60dp"
+            android:gravity="bottom|left"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/findStrategy"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/look_help_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_find_mdd" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/look_help_img"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="找攻略"
+                    android:textColor="#2C2C2C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/playnotes"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/look_help_img1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_hp_travelguide" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/look_help_img1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="看游记"
+                    android:textColor="#2C2C2C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderhotel"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/checkStratage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_traffic_neibu" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/checkStratage"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="订酒店"
+                    android:textColor="#2C2C2C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lookforTraffic"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ask_help"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/home_qa_icon" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ask_help"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="查交通"
+                    android:textColor="#2C2C2C" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divide1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/homepaerFragment"
+        android:layout_marginTop="20dp"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:id="@+id/scenryType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divide1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="花样撒野"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Subtitle"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="丰富你的选择"
+                android:textColor="#ccc"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/diaosi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/diao" />
+
+                <TextView
+                    android:id="@+id/subTypeName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="山水游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="醉爱奇秀山水"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zijiayou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/zijia" />
+
+                <TextView
+                    android:id="@+id/subTypeName1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg1"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="自驾游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName1"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="奔驰在阳光大道上"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qinglv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/love" />
+
+                <TextView
+                    android:id="@+id/subTypeName2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="情侣游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="手牵手一起去旅游"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/chihuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/food_beaut" />
+
+                <TextView
+                    android:id="@+id/subTypeName3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg3"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="吃货游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName3"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="吃货在游走"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xingshe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/guimi" />
+
+                <TextView
+                    android:id="@+id/subTypeName4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg4"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="行摄游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName4"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="对游客照say no"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/duzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/subImg5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/self" />
+
+                <TextView
+                    android:id="@+id/subTypeName5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subImg5"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="独自游"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/subTypedes5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subTypeName5"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="一个人的好时光"
+                    android:textColor="#ccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/scenryType"
+        android:layout_marginTop="20dp"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/divide3"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/playMethodImg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ww" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/playMethodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="与海上精灵亲密接触"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/playMethodTitle"
+                android:paddingLeft="10dp"
+                android:src="@drawable/img_tag_new" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playMethodContent"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="与海上精灵亲密接触对方的方式是发达的方法都是实打实地方的形成的市场发达v打算打算打算的地方"
+            android:textColor="#aaa" />
+
+        <Button
+            android:id="@+id/playMethodChange"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/playbtn"
+            android:text="换个玩法"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/play"
+        android:layout_marginTop="20dp"
+        android:background="#eee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divide2"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="精彩游记和专题"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/moreSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/Subtitle1"
+            android:src="@drawable/ic_card_title_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Subtitle1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="为你提供不一样的旅游"
+            android:textColor="#ccc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

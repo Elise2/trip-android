@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/faceAnswer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_bg"
+            android:scaleType="fitXY"
+            android:src="@drawable/wengwenglisthear"
+            app:riv_corner_radius="100dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/faceAnswer"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nameAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sdfdsfdfs"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/levelAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LV23"
+                android:textColor="@color/main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bestAnswer"
+            android:layout_width="80dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_radar_card_tag2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contentAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="dsdsadsdsa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dateAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012-11-01"
+            android:textColor="@color/deepgray"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/goodAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/askcheck"
+            android:padding="10dp"
+            android:text="211"
+            android:textColor="@color/askcolor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

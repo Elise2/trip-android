@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/askTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="sdfdsfdfs"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/askContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="sdfdsfdfs"
+            android:textColor="@color/deepgray"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/askFace"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/wengwenglisthear"
+                app:riv_corner_radius="100dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/askFace"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/askName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sdfdsfdfs"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/askTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2012-11-21"
+                    android:textColor="@color/deepgray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ask"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="共6条回答" />
+
+</LinearLayout>
